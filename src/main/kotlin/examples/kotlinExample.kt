@@ -8,9 +8,9 @@ import java.util.concurrent.CompletableFuture
 
 
 /**
- * This class defines methods representing the original service call that needs to be wrapped
- * by Hystris, the fallback service used in case of failure or timeout of the original service
- * call, and the service that adds Hystrix protection to the original service call..
+ * This example class illustrates methods representing the original service call that needs to
+ * be wrapped by Hystris, the fallback service used in case of failure or timeout of the original
+ * service call, and the service that adds Hystrix protection to the original service call.
  */
 class KotlinFunctionalHystrixExample : (Pair<Int, String>) -> Mono<String> {
 
@@ -93,8 +93,12 @@ class KotlinFunctionalHystrixExample : (Pair<Int, String>) -> Mono<String> {
  * Example of FunctiionalHystrix in action
  */
 fun main(args: Array<String>) {
+
+    // Instantiate the function object that provides the service including Hystrix protection
     val example: (Pair<Int, String>) -> Mono<String> = KotlinFunctionalHystrixExample()
 
+    // Create a list of String inputs to exercise the above example function.  See comment below for
+    // an explanation of the "wait" items.
     val inputStrings =
             List(25) { "normal" } +
                     List(2) { "wait" } +
@@ -112,10 +116,17 @@ fun main(args: Array<String>) {
                     List(1) { "wait" } +
                     List(20) { "normal" }
 
+    // Convert the above list to a list of pairs of indices and strings
     val inputs = inputStrings.indices.zip(inputStrings)
 
     val startTime = System.currentTimeMillis()
 
+    // Apply the example function to each element of the above-defined list, with some interspersed
+    // "wait"s.  The "wait"s are used to separate batches of requests (otherwise all requests would
+    // be lanunched concurrently) and, in the case of the 5 contiguous "wait"s, to allow the
+    // configured circuit-breaker sleep window to elapse so Hystrix can allow new requests through
+    // again (i.e., close the circuit) after it opens the circuit as a result of a series of errors
+    // or timeouts.
     val monos = inputs.map {
         if (it.second == "wait") {
             val wait: Long = 500
@@ -130,6 +141,7 @@ fun main(args: Array<String>) {
 //                    .toProcessor()
     }
 
+    // Block the main thread while any request monos are still active, until they all complete.
     Flux.concat(monos).blockLast()
 
     println("@@@@ Elapsed time = ${System.currentTimeMillis() - startTime}")

@@ -17,9 +17,9 @@ import static functionalhystrix.WithHystrixKt.defaultConfigProperties;
 
 
 /**
- * This class defines methods representing the original service call that needs to be wrapped
- * by Hystris, the fallback service used in case of failure or timeout of the original service
- * call, and the service that adds Hystrix protection to the original service call..
+ * This example class illustrates methods representing the original service call that needs to
+ * be wrapped by Hystris, the fallback service used in case of failure or timeout of the original
+ * service call, and the service that adds Hystrix protection to the original service call.
  */
 public class JavaFunctionalHystrixExample implements Function<String, Mono<String>> {
 
@@ -125,8 +125,11 @@ class Main {
 
     public static void main(String[] args) {
 
+        // Instantiate the function object that provides the service including Hystrix protection
         Function<String, Mono<String>> example = new JavaFunctionalHystrixExample();
 
+        // Create a list of inputs to exercise the above example function.  See comment below for
+        // an explanation of the "wait" items.
         List<String> inputStrings = new ArrayList<String>();
         inputStrings.addAll(Collections.nCopies(25, "normal"));
         inputStrings.addAll(Collections.nCopies(2, "wait"));
@@ -146,6 +149,12 @@ class Main {
 
         long startTime = System.currentTimeMillis();
 
+        // Apply the example function to each element of the above-defined list, with some interspersed
+        // "wait"s.  The "wait"s are used to separate batches of requests (otherwise all requests would
+        // be lanunched concurrently) and, in the case of the 5 contiguous "wait"s, to allow the
+        // configured circuit-breaker sleep window to elapse so Hystrix can allow new requests through
+        // again (i.e., close the circuit) after it opens the circuit as a result of a series of errors
+        // or timeouts.
         List<Mono<String>> monos = inputStrings.stream().map(it -> {
             if (it.equals("wait")) {
                 long wait = 500;
@@ -163,6 +172,7 @@ class Main {
 //                    .toProcessor();
         }).collect(Collectors.toList());
 
+        // Block the main thread while any request monos are still active, until they all complete.
         Flux.concat(monos).blockLast();
 
         System.out.println("@@@@ Elapsed time = " + (System.currentTimeMillis() - startTime));

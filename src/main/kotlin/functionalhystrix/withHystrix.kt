@@ -1,3 +1,8 @@
+/*
+ * The higher-order functions which provide Hystrix circuit breaker protection are defined
+ * and implemented in this file.
+ */
+
 package functionalhystrix
 
 import reactor.core.publisher.Mono
