@@ -4,7 +4,7 @@ import functionalhystrix.ConfigProperties
 import functionalhystrix.withHystrix
 import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
-import java.util.concurrent.CompletableFuture
+import reactor.core.scheduler.Schedulers
 
 
 /**
@@ -14,30 +14,32 @@ import java.util.concurrent.CompletableFuture
  */
 class KotlinFunctionalHystrixExample : (Pair<Int, String>) -> Mono<String> {
 
+    private val scheduler = Schedulers.elastic()
+
     /*
      * Original service call to be wrapped by Hystrix
      */
     private fun rawService(input: Pair<Int, String>): Mono<String> {
         val (idx, str) = input
         return when (str) {
-            "normal" -> Mono.fromFuture(CompletableFuture.supplyAsync {
+            "normal" -> Mono.fromSupplier {
                 println("Entered $input, running on ${Thread.currentThread()}")
                 Thread.sleep(40)
                 println("Exiting $input")
                 "OK-normal[index=$idx]"
-            })
-            "slow" -> Mono.fromFuture(CompletableFuture.supplyAsync {
+            }.subscribeOn(scheduler)
+            "slow" -> Mono.fromSupplier {
                 println("Entered $input, running on ${Thread.currentThread()}")
                 Thread.sleep(400)
                 println("Exiting $input")
                 "OK-slow[index=$idx]"
-            })
-            "error" -> Mono.fromFuture(CompletableFuture.supplyAsync {
+            }.subscribeOn(scheduler)
+            "error" -> Mono.fromSupplier<String> {
                 println("Entered $input, running on ${Thread.currentThread()}")
                 Thread.sleep(2)
                 println("Exiting $input")
                 throw RuntimeException("service error, index=$idx")
-            })
+            }.subscribeOn(scheduler)
             else -> throw IllegalArgumentException(str)
         }
     }
@@ -46,12 +48,12 @@ class KotlinFunctionalHystrixExample : (Pair<Int, String>) -> Mono<String> {
      * Provides fallback in case a call to rawService times-out or errors-out
      */
     private fun fallback(input: Pair<Int, String>): Mono<String> =
-            Mono.fromFuture(CompletableFuture.supplyAsync {
+            Mono.fromSupplier {
                 println("Entered fallback for $input, running on ${Thread.currentThread()}")
                 Thread.sleep(2)
                 println("Exiting fallback for $input")
                 "fallback(input=$input)"
-            })
+            }.subscribeOn(scheduler)
 
     /*
      * Customized Hystrix configuration properties

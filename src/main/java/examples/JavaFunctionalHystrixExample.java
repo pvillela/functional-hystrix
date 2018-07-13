@@ -3,15 +3,16 @@ package examples;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import functionalhystrix.ConfigProperties;
+import reactor.core.scheduler.Scheduler;
+import reactor.core.scheduler.Schedulers;
+
 import static functionalhystrix.WithHystrixKt.withHystrix;
 import static functionalhystrix.WithHystrixKt.defaultConfigProperties;
 
@@ -23,12 +24,14 @@ import static functionalhystrix.WithHystrixKt.defaultConfigProperties;
  */
 public class JavaFunctionalHystrixExample implements Function<String, Mono<String>> {
 
+    private Scheduler scheduler = Schedulers.elastic();
+    
     /*
      * Original service call to be wrapped by Hystrix
      */
     private Mono<String> rawService(String input) {
         if (input.equals("normal")) {
-            return Mono.fromFuture(CompletableFuture.supplyAsync(() -> {
+            return Mono.fromSupplier(() -> {
                 System.out.println("Entered " + input + ", running on " + Thread.currentThread());
                 try {
                     Thread.sleep(40);
@@ -36,9 +39,9 @@ public class JavaFunctionalHystrixExample implements Function<String, Mono<Strin
                 }
                 System.out.println("Exiting " + input);
                 return "OK-normal";
-            }));
+            }).subscribeOn(scheduler);
         } else if (input.equals("slow")) {
-            return Mono.fromFuture(CompletableFuture.supplyAsync(() -> {
+            return Mono.fromSupplier(() -> {
                 System.out.println("Entered " + input + ", running on " + Thread.currentThread());
                 try {
                     Thread.sleep(400);
@@ -46,9 +49,9 @@ public class JavaFunctionalHystrixExample implements Function<String, Mono<Strin
                 }
                 System.out.println("Exiting " + input);
                 return "OK-slow";
-            }));
+            }).subscribeOn(scheduler);
         } else if (input.equals("error")) {
-            return Mono.fromFuture(CompletableFuture.supplyAsync(() -> {
+            return Mono.<String>fromSupplier(() -> {
                 System.out.println("Entered " + input + ", running on " + Thread.currentThread());
                 try {
                     Thread.sleep(2);
@@ -56,7 +59,7 @@ public class JavaFunctionalHystrixExample implements Function<String, Mono<Strin
                 }
                 System.out.println("Exiting " + input);
                 throw new RuntimeException("service error");
-            }));
+            }).subscribeOn(scheduler);
         } else throw new IllegalArgumentException(input);
     }
 
@@ -64,7 +67,7 @@ public class JavaFunctionalHystrixExample implements Function<String, Mono<Strin
      * Provides fallback in case a call to rawService times-out or errors-out
      */
     private Mono<String> fallback(String input) {
-        return Mono.fromFuture(CompletableFuture.supplyAsync(() -> {
+        return Mono.fromSupplier(() -> {
             System.out.println("Entered fallback for " + input + ", running on " + Thread.currentThread());
             try {
                 Thread.sleep(2);
@@ -72,7 +75,7 @@ public class JavaFunctionalHystrixExample implements Function<String, Mono<Strin
             }
             System.out.println("Exiting fallback for " + input);
             return "fallback(input=" + input + ")";
-        }));
+        }).subscribeOn(scheduler);
     }
 
     /*
