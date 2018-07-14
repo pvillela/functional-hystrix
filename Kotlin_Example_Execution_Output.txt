@@ -1,294 +1,298 @@
-Entered (0, normal), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
-Exiting (0, normal)
-Entered (1, normal), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
-Entered (2, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Entered (3, normal), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
+Entered (0, normal), running on Thread[elastic-2,5,main]
+Entered (1, normal), running on Thread[elastic-3,5,main]
+Entered (2, normal), running on Thread[elastic-4,5,main]
+Entered (3, normal), running on Thread[elastic-5,5,main]
+Entered (4, normal), running on Thread[elastic-6,5,main]
+Entered (5, normal), running on Thread[elastic-7,5,main]
+Entered (6, normal), running on Thread[elastic-8,5,main]
+Entered (7, normal), running on Thread[elastic-9,5,main]
+Entered (8, normal), running on Thread[elastic-10,5,main]
+Entered (9, normal), running on Thread[elastic-11,5,main]
+Entered (10, normal), running on Thread[elastic-12,5,main]
+Entered (11, normal), running on Thread[elastic-13,5,main]
+Entered (12, normal), running on Thread[elastic-14,5,main]
+Entered (13, normal), running on Thread[elastic-15,5,main]
+Entered (14, normal), running on Thread[elastic-16,5,main]
+Entered (15, normal), running on Thread[elastic-17,5,main]
+Entered (16, normal), running on Thread[elastic-18,5,main]
+Entered (17, normal), running on Thread[elastic-19,5,main]
+Entered (18, normal), running on Thread[elastic-20,5,main]
+Entered (19, normal), running on Thread[elastic-21,5,main]
+Entered fallback for (21, normal), running on Thread[elastic-23,5,main]
+Entered fallback for (20, normal), running on Thread[elastic-22,5,main]
+Entered fallback for (22, normal), running on Thread[elastic-24,5,main]
+Exiting fallback for (21, normal)
+Exiting fallback for (20, normal)
 >>> Starting to wait 500 ms
+Entered fallback for (24, normal), running on Thread[elastic-26,5,main]
+Exiting fallback for (22, normal)
+Entered fallback for (23, normal), running on Thread[elastic-25,5,main]
+Exiting fallback for (24, normal)
+Exiting (0, normal)
+Exiting fallback for (23, normal)
 Exiting (1, normal)
 Exiting (2, normal)
 Exiting (3, normal)
-Entered (4, normal), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
-Entered (5, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Entered (6, normal), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
 Exiting (4, normal)
 Exiting (5, normal)
 Exiting (6, normal)
-Entered (7, normal), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
-Entered (8, normal), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
-Entered (9, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
 Exiting (7, normal)
-Entered (10, normal), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
 Exiting (8, normal)
 Exiting (9, normal)
-Entered (11, normal), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
-Entered (12, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
 Exiting (10, normal)
-Entered (13, normal), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
 Exiting (11, normal)
 Exiting (12, normal)
-Entered (14, normal), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
-Entered (15, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
 Exiting (13, normal)
-Entered (16, normal), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
 Exiting (14, normal)
 Exiting (15, normal)
-Entered (17, normal), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
-Entered (18, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
 Exiting (16, normal)
-Entered (19, normal), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
 Exiting (17, normal)
 Exiting (18, normal)
-Entered (20, normal), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
-Entered fallback for (21, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (21, normal)
-Entered fallback for (22, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (22, normal)
-Entered fallback for (23, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (23, normal)
-Entered fallback for (24, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (24, normal)
-Entered fallback for (19, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (19, normal)
-Entered fallback for (20, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (20, normal)
 Exiting (19, normal)
-Exiting (20, normal)
 <<< Finished waiting 500 ms
 >>> Starting to wait 500 ms
 <<< Finished waiting 500 ms
-Entered (27, normal), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
-Entered (28, normal), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
-Entered (29, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
+Entered (27, normal), running on Thread[elastic-22,5,main]
+Entered (28, normal), running on Thread[elastic-24,5,main]
+Entered (29, normal), running on Thread[elastic-23,5,main]
+Entered (30, normal), running on Thread[elastic-26,5,main]
+Entered (31, normal), running on Thread[elastic-2,5,main]
+Entered (32, normal), running on Thread[elastic-25,5,main]
+Entered (33, normal), running on Thread[elastic-3,5,main]
+Entered (34, normal), running on Thread[elastic-4,5,main]
+Entered (35, normal), running on Thread[elastic-5,5,main]
 >>> Starting to wait 500 ms
+Entered (36, normal), running on Thread[elastic-6,5,main]
 Exiting (27, normal)
 Exiting (28, normal)
-Entered (30, normal), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
-Entered (31, normal), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
 Exiting (29, normal)
-Entered (32, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
 Exiting (30, normal)
 Exiting (31, normal)
-Entered (33, normal), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
 Exiting (32, normal)
-Entered (34, normal), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
-Entered (35, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
 Exiting (33, normal)
 Exiting (34, normal)
 Exiting (35, normal)
-Entered (36, normal), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
 Exiting (36, normal)
 <<< Finished waiting 500 ms
 >>> Starting to wait 500 ms
 <<< Finished waiting 500 ms
-Entered (39, slow), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
-Entered (40, slow), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Entered (41, slow), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
+Entered (39, slow), running on Thread[elastic-7,5,main]
+Entered (40, slow), running on Thread[elastic-8,5,main]
+Entered (41, slow), running on Thread[elastic-9,5,main]
+Entered (42, slow), running on Thread[elastic-10,5,main]
+Entered (43, slow), running on Thread[elastic-11,5,main]
+Entered (44, slow), running on Thread[elastic-12,5,main]
+Entered (45, slow), running on Thread[elastic-13,5,main]
+Entered (46, slow), running on Thread[elastic-14,5,main]
+Entered (47, slow), running on Thread[elastic-15,5,main]
+Entered (48, slow), running on Thread[elastic-16,5,main]
+Entered (49, slow), running on Thread[elastic-17,5,main]
+Entered (50, slow), running on Thread[elastic-18,5,main]
+Entered (51, slow), running on Thread[elastic-19,5,main]
+Entered (52, slow), running on Thread[elastic-20,5,main]
+Entered (53, slow), running on Thread[elastic-21,5,main]
+Entered (54, slow), running on Thread[elastic-22,5,main]
+Entered (55, slow), running on Thread[elastic-24,5,main]
+Entered (56, slow), running on Thread[elastic-23,5,main]
+Entered (57, slow), running on Thread[elastic-26,5,main]
 >>> Starting to wait 500 ms
-Exiting (39, slow)
-Entered (42, slow), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
-Exiting (40, slow)
-Entered fallback for (39, slow), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting (41, slow)
-Entered (43, slow), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
+Entered (58, slow), running on Thread[elastic-2,5,main]
+Entered fallback for (39, slow), running on Thread[elastic-4,5,main]
+Entered fallback for (42, slow), running on Thread[elastic-25,5,main]
+Entered fallback for (41, slow), running on Thread[elastic-3,5,main]
+Entered fallback for (40, slow), running on Thread[elastic-5,5,main]
+Entered fallback for (44, slow), running on Thread[elastic-7,5,main]
+Entered fallback for (43, slow), running on Thread[elastic-6,5,main]
 Exiting fallback for (39, slow)
-Entered fallback for (40, slow), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (40, slow)
-Entered (44, slow), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-<<< Finished waiting 500 ms
->>> Starting to wait 500 ms
-Exiting (42, slow)
-Entered fallback for (43, slow), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
-Exiting (43, slow)
-Entered (45, slow), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
-Exiting fallback for (43, slow)
-Entered (46, slow), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
-Exiting (44, slow)
-Entered (47, slow), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-<<< Finished waiting 500 ms
->>> Starting to wait 500 ms
-Exiting (45, slow)
-Entered fallback for (41, slow), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
-Exiting (46, slow)
-Exiting fallback for (41, slow)
-Entered (48, slow), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
-Entered (49, slow), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
-Exiting (47, slow)
-Entered fallback for (48, slow), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (48, slow)
-Entered fallback for (52, slow), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (52, slow)
-Entered (50, slow), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-<<< Finished waiting 500 ms
->>> Starting to wait 500 ms
-Exiting (48, slow)
-Entered (51, slow), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
-Exiting (49, slow)
-Entered (52, slow), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
-Exiting (50, slow)
-Entered fallback for (42, slow), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
+Entered fallback for (46, slow), running on Thread[elastic-8,5,main]
+Entered fallback for (45, slow), running on Thread[elastic-9,5,main]
 Exiting fallback for (42, slow)
-Entered fallback for (53, slow), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (53, slow)
-Entered (53, slow), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting (51, slow)
-Entered (54, slow), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
-Exiting (52, slow)
-Entered fallback for (44, slow), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
+Entered fallback for (47, slow), running on Thread[elastic-10,5,main]
+Exiting fallback for (41, slow)
+Exiting fallback for (40, slow)
 Exiting fallback for (44, slow)
-Entered (55, slow), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
-Exiting (53, slow)
-Entered (56, slow), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-<<< Finished waiting 500 ms
->>> Starting to wait 500 ms
-Exiting (54, slow)
-Entered (57, slow), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
-Exiting (55, slow)
-Entered (58, slow), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
-Exiting (56, slow)
-Entered (61, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting (61, error)
-Entered (62, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting (62, error)
-Entered fallback for (61, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (61, error)
-Entered fallback for (83, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (83, error)
-Entered fallback for (45, slow), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
+Exiting fallback for (43, slow)
 Exiting fallback for (45, slow)
-Entered fallback for (46, slow), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
 Exiting fallback for (46, slow)
-Entered fallback for (47, slow), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
+Entered fallback for (49, slow), running on Thread[elastic-12,5,main]
+Entered fallback for (48, slow), running on Thread[elastic-11,5,main]
 Exiting fallback for (47, slow)
-Entered (63, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting (63, error)
-Entered fallback for (49, slow), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
+Entered fallback for (50, slow), running on Thread[elastic-14,5,main]
+Entered fallback for (51, slow), running on Thread[elastic-13,5,main]
 Exiting fallback for (49, slow)
-Entered fallback for (50, slow), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
+Exiting fallback for (48, slow)
 Exiting fallback for (50, slow)
-Entered fallback for (51, slow), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
 Exiting fallback for (51, slow)
-Entered fallback for (54, slow), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (54, slow)
-Entered fallback for (64, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (64, error)
-Entered fallback for (55, slow), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
+Entered fallback for (52, slow), running on Thread[elastic-4,5,main]
+Entered fallback for (53, slow), running on Thread[elastic-25,5,main]
+Exiting fallback for (52, slow)
+Exiting fallback for (53, slow)
+Entered fallback for (55, slow), running on Thread[elastic-3,5,main]
+Entered fallback for (56, slow), running on Thread[elastic-5,5,main]
+Entered fallback for (57, slow), running on Thread[elastic-7,5,main]
+Entered fallback for (58, slow), running on Thread[elastic-6,5,main]
+Entered fallback for (54, slow), running on Thread[elastic-15,5,main]
 Exiting fallback for (55, slow)
-Entered fallback for (65, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (65, error)
-Entered fallback for (56, slow), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
 Exiting fallback for (56, slow)
-Entered fallback for (66, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (66, error)
-Entered fallback for (57, slow), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
 Exiting fallback for (57, slow)
-Entered fallback for (67, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (67, error)
-Entered fallback for (68, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (68, error)
-Entered fallback for (58, slow), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
 Exiting fallback for (58, slow)
-Entered fallback for (69, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
+Exiting fallback for (54, slow)
+<<< Finished waiting 500 ms
+>>> Starting to wait 500 ms
+<<< Finished waiting 500 ms
+Entered (61, error), running on Thread[elastic-16,5,main]
+Entered (62, error), running on Thread[elastic-17,5,main]
+Entered (63, error), running on Thread[elastic-18,5,main]
+Entered (64, error), running on Thread[elastic-8,5,main]
+Entered (65, error), running on Thread[elastic-10,5,main]
+Exiting (61, error)
+Entered (67, error), running on Thread[elastic-19,5,main]
+Entered fallback for (61, error), running on Thread[elastic-12,5,main]
+Entered (69, error), running on Thread[elastic-11,5,main]
+Exiting (63, error)
+Entered (66, error), running on Thread[elastic-9,5,main]
+Entered (68, error), running on Thread[elastic-20,5,main]
+Entered (70, error), running on Thread[elastic-14,5,main]
+Entered (71, error), running on Thread[elastic-13,5,main]
+Exiting (65, error)
+Entered fallback for (63, error), running on Thread[elastic-22,5,main]
+Entered fallback for (65, error), running on Thread[elastic-21,5,main]
+Exiting fallback for (61, error)
+Entered (72, error), running on Thread[elastic-4,5,main]
+Exiting (66, error)
+Exiting (69, error)
+Entered (73, error), running on Thread[elastic-24,5,main]
+Exiting (71, error)
+Exiting (67, error)
+Entered fallback for (69, error), running on Thread[elastic-23,5,main]
+Exiting (70, error)
+Exiting (68, error)
+Entered fallback for (70, error), running on Thread[elastic-3,5,main]
+Entered fallback for (68, error), running on Thread[elastic-5,5,main]
+Entered fallback for (66, error), running on Thread[elastic-25,5,main]
+Exiting (72, error)
+Exiting (73, error)
 Exiting fallback for (69, error)
-Entered fallback for (70, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
+Entered fallback for (73, error), running on Thread[elastic-15,5,main]
+Exiting fallback for (65, error)
+Exiting (62, error)
 Exiting fallback for (70, error)
-Entered fallback for (62, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (62, error)
-Entered fallback for (71, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (71, error)
-Entered fallback for (72, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (72, error)
-Entered fallback for (73, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (73, error)
-Entered fallback for (63, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
+Exiting fallback for (68, error)
+Entered fallback for (62, error), running on Thread[elastic-6,5,main]
+Exiting (64, error)
+Entered fallback for (67, error), running on Thread[elastic-26,5,main]
+Exiting fallback for (66, error)
+Entered fallback for (71, error), running on Thread[elastic-2,5,main]
 Exiting fallback for (63, error)
-Entered fallback for (74, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (74, error)
-Entered fallback for (75, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
+Entered fallback for (64, error), running on Thread[elastic-16,5,main]
+Entered fallback for (72, error), running on Thread[elastic-7,5,main]
+Exiting fallback for (73, error)
+Entered (74, error), running on Thread[elastic-18,5,main]
+Exiting fallback for (62, error)
+Exiting fallback for (67, error)
+Entered (75, error), running on Thread[elastic-10,5,main]
+Exiting fallback for (71, error)
+Entered (76, error), running on Thread[elastic-12,5,main]
+Exiting fallback for (64, error)
+Exiting fallback for (72, error)
+Entered (77, error), running on Thread[elastic-9,5,main]
+Exiting (74, error)
+Entered (78, error), running on Thread[elastic-19,5,main]
+Entered fallback for (74, error), running on Thread[elastic-11,5,main]
+Exiting (75, error)
+Entered (79, error), running on Thread[elastic-13,5,main]
+Entered fallback for (75, error), running on Thread[elastic-14,5,main]
+Exiting (76, error)
+Entered (80, error), running on Thread[elastic-20,5,main]
+Exiting (77, error)
+Entered fallback for (76, error), running on Thread[elastic-4,5,main]
+Entered fallback for (77, error), running on Thread[elastic-24,5,main]
+Exiting (78, error)
+Exiting (79, error)
+Entered fallback for (79, error), running on Thread[elastic-21,5,main]
+Exiting (80, error)
+Entered fallback for (78, error), running on Thread[elastic-23,5,main]
 Exiting fallback for (75, error)
-Entered fallback for (82, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (82, error)
-Entered fallback for (84, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (84, error)
-Entered fallback for (76, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (76, error)
-Entered fallback for (77, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
+Entered fallback for (80, error), running on Thread[elastic-3,5,main]
 Exiting fallback for (77, error)
-Entered fallback for (78, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (78, error)
-Entered fallback for (79, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
+Exiting fallback for (76, error)
+Exiting fallback for (74, error)
 Exiting fallback for (79, error)
-Entered fallback for (80, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
 Exiting fallback for (80, error)
-Entered (82, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting (82, error)
-Entered (83, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting (83, error)
-Entered (84, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting (84, error)
-Entered fallback for (85, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-<<< Finished waiting 500 ms
+Exiting fallback for (78, error)
 >>> Starting to wait 500 ms
+<<< Finished waiting 500 ms
+Entered fallback for (82, error), running on Thread[elastic-17,5,main]
+Entered fallback for (83, error), running on Thread[elastic-5,5,main]
+Entered fallback for (84, error), running on Thread[elastic-8,5,main]
+Entered fallback for (85, error), running on Thread[elastic-25,5,main]
+Entered fallback for (86, error), running on Thread[elastic-22,5,main]
+Exiting fallback for (82, error)
+Exiting fallback for (83, error)
+Exiting fallback for (84, error)
 Exiting fallback for (85, error)
-Entered fallback for (86, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
 Exiting fallback for (86, error)
-Entered fallback for (87, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
+Entered fallback for (87, error), running on Thread[elastic-15,5,main]
+Entered fallback for (88, error), running on Thread[elastic-6,5,main]
+Entered fallback for (89, error), running on Thread[elastic-26,5,main]
+Entered fallback for (90, error), running on Thread[elastic-2,5,main]
 Exiting fallback for (87, error)
-Entered fallback for (88, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
+Entered fallback for (91, error), running on Thread[elastic-16,5,main]
 Exiting fallback for (88, error)
-Entered fallback for (89, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
+Entered fallback for (92, error), running on Thread[elastic-7,5,main]
 Exiting fallback for (89, error)
-Entered fallback for (90, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
 Exiting fallback for (90, error)
-Entered fallback for (91, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
+Entered fallback for (93, error), running on Thread[elastic-18,5,main]
 Exiting fallback for (91, error)
-Entered fallback for (92, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
 Exiting fallback for (92, error)
-Entered fallback for (93, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
+Entered fallback for (94, error), running on Thread[elastic-10,5,main]
+Entered fallback for (95, error), running on Thread[elastic-12,5,main]
 Exiting fallback for (93, error)
-Entered fallback for (94, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
+Entered fallback for (96, error), running on Thread[elastic-9,5,main]
 Exiting fallback for (94, error)
-Entered fallback for (95, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
+Entered fallback for (97, error), running on Thread[elastic-19,5,main]
 Exiting fallback for (95, error)
-Entered fallback for (96, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
 Exiting fallback for (96, error)
-Entered fallback for (97, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
 Exiting fallback for (97, error)
-Entered fallback for (98, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (98, error)
-Entered fallback for (99, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
+Entered fallback for (98, error), running on Thread[elastic-13,5,main]
+Entered fallback for (99, error), running on Thread[elastic-20,5,main]
+Entered fallback for (100, error), running on Thread[elastic-14,5,main]
 Exiting fallback for (99, error)
-Entered fallback for (100, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
 Exiting fallback for (100, error)
-Entered fallback for (101, error), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
+Exiting fallback for (98, error)
+Entered fallback for (101, error), running on Thread[elastic-4,5,main]
+>>> Starting to wait 500 ms
 Exiting fallback for (101, error)
-Exiting (57, slow)
-Exiting (58, slow)
 <<< Finished waiting 500 ms
 >>> Starting to wait 500 ms
 <<< Finished waiting 500 ms
 >>> Starting to wait 500 ms
 <<< Finished waiting 500 ms
-Entered fallback for (107, normal), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
-Entered fallback for (108, normal), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
-Entered fallback for (109, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (107, normal)
+>>> Starting to wait 500 ms
+<<< Finished waiting 500 ms
+>>> Starting to wait 500 ms
+<<< Finished waiting 500 ms
+Entered (107, normal), running on Thread[elastic-24,5,main]
+Entered fallback for (108, normal), running on Thread[elastic-11,5,main]
+Entered fallback for (109, normal), running on Thread[elastic-21,5,main]
+Entered fallback for (110, normal), running on Thread[elastic-3,5,main]
+Entered fallback for (111, normal), running on Thread[elastic-23,5,main]
 Exiting fallback for (108, normal)
+Entered fallback for (112, normal), running on Thread[elastic-17,5,main]
 Exiting fallback for (109, normal)
-Entered fallback for (110, normal), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
-Entered fallback for (111, normal), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
-Entered fallback for (112, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Exiting fallback for (110, normal)
 Exiting fallback for (111, normal)
+Exiting fallback for (110, normal)
 Exiting fallback for (112, normal)
-Entered fallback for (114, normal), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
-Entered fallback for (113, normal), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
-Entered fallback for (115, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
+Entered fallback for (113, normal), running on Thread[elastic-5,5,main]
+Entered fallback for (114, normal), running on Thread[elastic-8,5,main]
+Entered fallback for (115, normal), running on Thread[elastic-22,5,main]
 >>> Starting to wait 500 ms
-Exiting fallback for (114, normal)
 Exiting fallback for (113, normal)
-Entered fallback for (116, normal), running on Thread[ForkJoinPool.commonPool-worker-1,5,main]
+Entered fallback for (116, normal), running on Thread[elastic-25,5,main]
+Exiting fallback for (114, normal)
 Exiting fallback for (115, normal)
 Exiting fallback for (116, normal)
+Exiting (107, normal)
 <<< Finished waiting 500 ms
 >>> Starting to wait 500 ms
 <<< Finished waiting 500 ms
@@ -298,56 +302,52 @@ Exiting fallback for (116, normal)
 <<< Finished waiting 500 ms
 >>> Starting to wait 500 ms
 <<< Finished waiting 500 ms
-Entered (122, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Entered fallback for (123, normal), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
+Entered (122, normal), running on Thread[elastic-15,5,main]
 >>> Starting to wait 500 ms
-Exiting fallback for (123, normal)
+Entered (123, normal), running on Thread[elastic-6,5,main]
 Exiting (122, normal)
+Exiting (123, normal)
 <<< Finished waiting 500 ms
-Entered (125, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Entered (126, normal), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
-Entered (127, normal), running on Thread[ForkJoinPool.commonPool-worker-0,5,main]
-@@@@ Elapsed time = 9176
+Entered (125, normal), running on Thread[elastic-26,5,main]
+Entered (126, normal), running on Thread[elastic-2,5,main]
+Entered (127, normal), running on Thread[elastic-16,5,main]
+Entered (128, normal), running on Thread[elastic-7,5,main]
+Entered (129, normal), running on Thread[elastic-18,5,main]
+Entered (130, normal), running on Thread[elastic-10,5,main]
+Entered (131, normal), running on Thread[elastic-9,5,main]
+Entered (132, normal), running on Thread[elastic-12,5,main]
+Entered (133, normal), running on Thread[elastic-19,5,main]
+Entered (137, normal), running on Thread[elastic-4,5,main]
+Entered (136, normal), running on Thread[elastic-14,5,main]
+Entered (135, normal), running on Thread[elastic-13,5,main]
+Entered (134, normal), running on Thread[elastic-20,5,main]
+Entered (138, normal), running on Thread[elastic-11,5,main]
+Entered (139, normal), running on Thread[elastic-23,5,main]
+Entered (140, normal), running on Thread[elastic-21,5,main]
+Entered (141, normal), running on Thread[elastic-3,5,main]
+Entered (142, normal), running on Thread[elastic-17,5,main]
+Entered (143, normal), running on Thread[elastic-5,5,main]
+Entered (144, normal), running on Thread[elastic-8,5,main]
 Exiting (125, normal)
 Exiting (126, normal)
-Entered (128, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
 Exiting (127, normal)
-Entered (129, normal), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
-Entered (130, normal), running on Thread[ForkJoinPool.commonPool-worker-0,5,main]
 Exiting (128, normal)
 Exiting (129, normal)
-Entered (131, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
-Entered (132, normal), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
 Exiting (130, normal)
-Entered (133, normal), running on Thread[ForkJoinPool.commonPool-worker-0,5,main]
 Exiting (131, normal)
 Exiting (132, normal)
-Entered (134, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
 Exiting (133, normal)
-Entered (135, normal), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
-Entered (136, normal), running on Thread[ForkJoinPool.commonPool-worker-0,5,main]
-Exiting (134, normal)
-Entered (137, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
 Exiting (135, normal)
 Exiting (136, normal)
-Entered (138, normal), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
-Entered (139, normal), running on Thread[ForkJoinPool.commonPool-worker-0,5,main]
+Exiting (134, normal)
 Exiting (137, normal)
 Exiting (138, normal)
-Entered (140, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
 Exiting (139, normal)
-Entered (141, normal), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
-Entered (142, normal), running on Thread[ForkJoinPool.commonPool-worker-0,5,main]
 Exiting (140, normal)
 Exiting (141, normal)
-Entered (143, normal), running on Thread[ForkJoinPool.commonPool-worker-2,5,main]
 Exiting (142, normal)
-Entered (144, normal), running on Thread[ForkJoinPool.commonPool-worker-3,5,main]
-Entered fallback for (143, normal), running on Thread[ForkJoinPool.commonPool-worker-0,5,main]
-Exiting fallback for (143, normal)
-Entered fallback for (144, normal), running on Thread[ForkJoinPool.commonPool-worker-0,5,main]
-Exiting fallback for (144, normal)
 Exiting (143, normal)
 Exiting (144, normal)
+@@@@ Elapsed time = 9305
 
-BUILD SUCCESSFUL in 16s
+BUILD SUCCESSFUL in 14s
